@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #d6cdc8;
+}
+.container{
+  width: 90%;
+  min-height: 100vh;
+  margin: 50px auto;
+  padding: 20px;
+}
+.about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutus-img{
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.aboutus-img img{
+  max-width:100%;
+  height:auto;
+}
+.aboutus-details{
+  flex:1;
+  min-width: 300px;
+  
+}
+.aboutus-details h1{
+  font-size: 50px;
+}
+.aboutus-details h3{
+  margin-top: 10px;
+}
+.aboutus-details p{
+  margin-top: 7px;
+}
+.aboutus-details .btn{
+  background-color: black;
+  padding: 20px 40px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.info-boxes{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.box{
+  background: darkorange;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width:250px;
+}
+.box h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.box i{
+  margin-right: 10px;
+}
+.box p{
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutus-details h1 {
+    font-size: 40px;
+  }
+
+  .aboutus-details .btn {
+    font-size: 20px;
+  }
+  .info-boxes {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+ .box{
+   margin: 10px 0;
+ }
+}
+
+@media (min-width: 768px){
+  .box{
+    margin: 0 10px;
+  }
+  
+  .aboutus-details p{
+    text-align: justify;
+  }
+}
+
+
+
